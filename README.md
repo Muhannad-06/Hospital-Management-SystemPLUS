@@ -94,5 +94,5 @@ The app ships with a starter SQLite database (`hospital.db`) in the project root
 - Compiled output (`bin/`, `target/`) and IDE metadata (`.classpath`, `.project`, `.settings/`) are also excluded — regenerate them locally via Maven or your IDE.
 
 ## License
-
-MIT — see [LICENSE](LICENSE).
+**Copyright (c) 2026 Muhannad El-Shahiedy**
+All Rights Reserved.
