@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.controllerWelcomeScreen">
+   <children>
+      <ImageView fitHeight="630.0" fitWidth="910.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/welcomeScreenLayout.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnFollowUp" layoutX="44.0" layoutY="286.0" mnemonicParsing="false" onAction="#btnFollowUp" prefHeight="88.0" prefWidth="250.0" />
+      <Button fx:id="btnRegister" layoutX="44.0" layoutY="401.0" mnemonicParsing="false" onAction="#btnRegister" prefHeight="88.0" prefWidth="250.0" />
+      <Button fx:id="btnDoctors" layoutX="355.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnDoctors" prefHeight="115.0" prefWidth="91.0" />
+      <RadioButton fx:id="btnNeuro" blendMode="DARKEN" layoutX="679.0" layoutY="74.0" mnemonicParsing="false" onAction="#clinicDESC" prefHeight="125.0" prefWidth="120.0" text="Advanced Neurological Care for a Healthier Mind and Better Life." textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="clinic" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btnOrtho" blendMode="DARKEN" layoutX="619.0" layoutY="199.0" mnemonicParsing="false" onAction="#clinicDESC" prefHeight="125.0" prefWidth="120.0" text="Restoring Strength, Mobility, and Comfort with Expert Orthopedic Care" textOverrun="CENTER_ELLIPSIS" toggleGroup="$clinic">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btnCardio" blendMode="DARKEN" layoutX="559.0" layoutY="86.0" mnemonicParsing="false" onAction="#clinicDESC" prefHeight="125.0" prefWidth="120.0" text="Dedicated Heart Care Powered by Precision and Innovation" textOverrun="CENTER_ELLIPSIS" toggleGroup="$clinic">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btnCancer" blendMode="DARKEN" layoutX="739.0" layoutY="199.0" mnemonicParsing="false" onAction="#clinicDESC" prefHeight="125.0" prefWidth="120.0" text="Compassionate Oncology Care Focused on Hope, Healing, and Recovery" textOverrun="CENTER_ELLIPSIS" toggleGroup="$clinic">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="txtClinic" alignment="TOP_LEFT" layoutX="15.0" layoutY="495.0" prefHeight="68.0" prefWidth="893.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="56.0" layoutY="155.0" prefHeight="17.0" prefWidth="153.0" text="Active Patients" textFill="#033867">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="247.0" layoutY="155.0" prefHeight="17.0" prefWidth="159.0" text="Available Beds" textFill="#033867">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtCounterPatient" alignment="CENTER" layoutX="56.0" layoutY="172.0" prefHeight="59.0" prefWidth="153.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtCounterBed" alignment="CENTER" layoutX="244.0" layoutY="172.0" prefHeight="73.0" prefWidth="165.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.controllerDoctorDashboard">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1400.0" mouseTransparent="true" pickOnBounds="false" preserveRatio="true">
+         <image>
+            <Image url="@../image/DoctorDashboard.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnUrgentAppointment" blendMode="DARKEN" layoutX="643.0" layoutY="560.0" mnemonicParsing="false" onAction="#btnUrgentAPP" prefHeight="210.0" prefWidth="281.0" />
+      <Button fx:id="btnExit" blendMode="DARKEN" layoutX="23.0" layoutY="719.0" mnemonicParsing="false" onAction="#btnEXIT" prefHeight="71.0" prefWidth="74.0" />
+      <Label fx:id="txtDrName" layoutX="23.0" layoutY="279.0" prefHeight="47.0" prefWidth="188.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtAppointmentCounter" alignment="CENTER" layoutX="467.0" layoutY="147.0" prefHeight="71.0" prefWidth="188.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtTasksDone" alignment="CENTER" layoutX="710.0" layoutY="147.0" prefHeight="71.0" prefWidth="188.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtDrNextAppointment" alignment="CENTER" layoutX="245.0" layoutY="213.0" prefHeight="55.0" prefWidth="156.0" textFill="#c96e6e">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPatientNextAppointment" alignment="CENTER" layoutX="773.0" layoutY="461.0" prefHeight="47.0" prefWidth="141.0" textFill="#c96e6e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtDOB" alignment="CENTER" layoutX="1044.0" layoutY="265.0" prefHeight="47.0" prefWidth="223.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtGender" alignment="CENTER" layoutX="1052.0" layoutY="308.0" prefHeight="35.0" prefWidth="223.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtBloodType" alignment="CENTER" layoutX="1092.0" layoutY="345.0" prefHeight="35.0" prefWidth="223.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtWeight" alignment="CENTER" layoutX="1070.0" layoutY="373.0" prefHeight="47.0" prefWidth="223.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtHeight" alignment="CENTER" layoutX="1070.0" layoutY="418.0" prefHeight="35.0" prefWidth="223.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPatientID" alignment="CENTER" layoutX="1079.0" layoutY="446.0" prefHeight="47.0" prefWidth="223.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtBednum" alignment="CENTER" layoutX="1037.0" layoutY="484.0" prefHeight="47.0" prefWidth="306.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtChronic" alignment="CENTER" layoutX="1104.0" layoutY="517.0" prefHeight="47.0" prefWidth="234.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDiagnosis" layoutX="954.0" layoutY="607.0" prefHeight="115.0" prefWidth="383.0" />
+      <ComboBox fx:id="comboBoxPatients" layoutX="665.0" layoutY="272.0" prefHeight="35.0" prefWidth="248.0" promptText="Select Patient" />
+      <TextField fx:id="txtECG" alignment="CENTER" blendMode="DARKEN" layoutX="364.0" layoutY="405.0" prefHeight="53.0" prefWidth="141.0" promptText="Condition">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtXray" alignment="CENTER" blendMode="DARKEN" layoutX="364.0" layoutY="518.0" prefHeight="46.0" prefWidth="141.0" promptText="Condition">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtOnc" alignment="CENTER" blendMode="DARKEN" layoutX="364.0" layoutY="613.0" prefHeight="46.0" prefWidth="141.0" promptText="Condition">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtMRI" alignment="CENTER" blendMode="DARKEN" layoutX="364.0" layoutY="717.0" prefHeight="46.0" prefWidth="141.0" promptText="Condition">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></TextField>
+      <CheckBox fx:id="checkPatient1" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="Muhannad El-Shahiedy" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPatient2" layoutX="14.0" layoutY="467.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="Patient" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPatient3" layoutX="14.0" layoutY="507.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="Patient" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPatient4" layoutX="14.0" layoutY="547.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="Patient" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPatient5" layoutX="14.0" layoutY="587.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="Patient" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPatient6" layoutX="14.0" layoutY="627.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="Patient" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPatient7" layoutX="14.0" layoutY="667.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="Patient" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="txtToday" layoutX="23.0" layoutY="373.0" prefHeight="35.0" prefWidth="101.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="update" blendMode="DARKEN" layoutX="1284.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleSaveRecords" prefHeight="55.0" prefWidth="63.0" />
+   </children>
+</Pane>

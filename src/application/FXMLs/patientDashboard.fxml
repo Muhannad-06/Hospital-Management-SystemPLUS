@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="790.0" minWidth="1400.0" prefHeight="790.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.controllerPatientDashboard">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1400.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/PatientDashboard.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtPatientName" alignment="CENTER" layoutX="-1.0" layoutY="248.0" prefHeight="54.0" prefWidth="243.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtDOB" alignment="CENTER" layoutX="56.0" layoutY="366.0" prefHeight="29.0" prefWidth="173.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtGender" alignment="CENTER" layoutX="104.0" layoutY="402.0" prefHeight="30.0" prefWidth="130.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtBloodType" alignment="CENTER" layoutX="145.0" layoutY="434.0" prefHeight="30.0" prefWidth="85.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtWeight" alignment="CENTER" layoutX="99.0" layoutY="475.0" prefHeight="30.0" prefWidth="85.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtHeight" alignment="CENTER" layoutX="107.0" layoutY="509.0" prefHeight="30.0" prefWidth="85.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPatientID" alignment="CENTER" layoutX="127.0" layoutY="544.0" prefHeight="30.0" prefWidth="85.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtBedID" alignment="CENTER" layoutX="85.0" layoutY="585.0" prefHeight="30.0" prefWidth="140.0" text="Not Assigned" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtChronic" alignment="CENTER" layoutX="151.0" layoutY="622.0" prefHeight="30.0" prefWidth="85.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBloodCheck" blendMode="DARKEN" layoutX="806.0" layoutY="622.0" mnemonicParsing="false" onAction="#handleBloodCheck" prefHeight="119.0" prefWidth="140.0" />
+      <Button fx:id="btnOrtho" blendMode="DARKEN" layoutX="1010.0" layoutY="621.0" mnemonicParsing="false" onAction="#handleOrth" prefHeight="119.0" prefWidth="140.0" />
+      <Button fx:id="btnCardio" blendMode="DARKEN" layoutX="914.0" layoutY="489.0" mnemonicParsing="false" onAction="#handleCardio" prefHeight="119.0" prefWidth="140.0" />
+      <Button fx:id="btnNeuro" blendMode="DARKEN" layoutX="1117.0" layoutY="481.0" mnemonicParsing="false" onAction="#handleNeuro" prefHeight="119.0" prefWidth="140.0" />
+      <Button fx:id="btnCancer" blendMode="DARKEN" layoutX="1201.0" layoutY="623.0" mnemonicParsing="false" onAction="#handleCancer" prefHeight="119.0" prefWidth="140.0" />
+      <Label fx:id="txtNextAppointment" alignment="CENTER" layoutX="710.0" layoutY="309.0" prefHeight="56.0" prefWidth="280.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtECG" alignment="CENTER" layoutX="595.0" layoutY="239.0" prefHeight="56.0" prefWidth="130.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtXRay" alignment="CENTER" layoutX="765.0" layoutY="239.0" prefHeight="56.0" prefWidth="130.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtOncology" alignment="CENTER" layoutX="989.0" layoutY="239.0" prefHeight="56.0" prefWidth="130.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtMRI" alignment="CENTER" layoutX="1223.0" layoutY="239.0" prefHeight="56.0" prefWidth="130.0" textFill="#f4979c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button blendMode="DARKEN" layoutX="21.0" layoutY="715.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="71.0" />
+      <Label fx:id="txtDiagnosis" alignment="TOP_LEFT" layoutX="267.0" layoutY="501.0" prefHeight="202.0" prefWidth="322.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="btnExit" blendMode="DARKEN" layoutX="32.0" layoutY="715.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="68.0" prefWidth="57.0" />
+      <Button fx:id="btnAIChat" layoutX="1015.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleAIChat" opacity="0.0" prefHeight="119.0" prefWidth="125.0" style="-fx-background-color: #27ae60; -fx-background-radius: 25; -fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold;" text="💬 Consultaion" />
+      <Button fx:id="payBill" layoutX="17.0" layoutY="658.0" mnemonicParsing="false" onAction="#handlepayBill" opacity="0.0" prefHeight="38.0" prefWidth="209.0" />
+   </children>
+</Pane>
